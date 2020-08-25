@@ -1,0 +1,24 @@
+
+{% load socialaccount %}
+    
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+
+
+
+
+<!-- JUMBOTRON -->
+<div class=" container jumbotron text-center mt-5">
+    <h1 class="text-danger display-4 mb-3">PlayChamp</h1>
+      <h2 class="text-black-50 display-6">Login with</h2>
+      <div class="container">
+          <div class="btn-group-vertical justify-content-center">
+
+                          <a class="btn  btn-primary rounded btn-lg mb-5" href="{% provider_login_url "google" method= "oauth2" %}" style="width:300px;">Google</a>
+
+
+                          <a class="btn btn-primary rounded btn-lg mb-5" href="{% provider_login_url "facebook" method="oauth2" %}" style="width:300px;">Facebook</a>
+                              </div>
+      </div>
+  </div>
+
